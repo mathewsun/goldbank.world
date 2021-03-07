@@ -1,0 +1,103 @@
+<style type="text/css">
+
+.fancy-input {
+	font-size: 20px;
+	color: #333;
+	text-decoration: none;
+	background-color: #D7D7D7;
+	border: 1px solid #666;
+	border-radius: 3px;
+	text-align:center;
+	margin:0 auto 0;
+	width:200px;
+}
+.popup {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	color: #333;
+	text-decoration: none;
+	width:100%;
+	text-align:center;
+	padding-top:0;
+	margin:0;
+}
+.popup-zag{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: #333;
+	text-decoration: none;
+	width:100%;
+	text-align:left;
+	padding-bottom:10px;
+}
+.fancy-btn{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFF;
+	text-decoration: none;
+	background-color: #333;
+	border: 1px solid #333;
+	border-radius: 3px;
+	width:200px;
+	margin-top:5px;
+	padding:12px;
+	box-sizing:border-box; 	
+}
+.mar{
+	margin:5px;
+}
+.popup-left-area{
+	display:inline-block;
+	width:45%;
+	vertical-align:top;
+	margin:5px;
+}
+.popup-right-area{
+	display:inline-block;
+	width:90%;
+	vertical-align:top;	
+	text-align:center;
+	margin:5px;	
+}
+.popup-img{
+	width:300px;
+}
+@media screen and (max-width:700px){
+.popup-left-area{
+	width:50%;
+}
+.popup-right-area{
+	width:45%;
+}
+.popup-img{
+	width:250px;
+}	
+}
+@media screen and (max-width:666px){
+.popup-left-area{
+	display:none;
+}
+.popup-right-area{
+	width:95%;
+	text-align:center;
+}	
+.popup-zag{
+	text-align:center;
+}
+}
+</style>  
+<!--callbacl popup -->
+<div class="popup">
+<div class="popup-right-area">
+    <div class="popup-zag">Мы перезвоним вам</div>
+    Оставьте свои контактные данные и мы с вами свяжемся с вами в кратчайшее время<br><br>
+    <form action="callback.php" method="POST">
+    <input type="text" name="name"  class="fancy-input mar" placeholder="Имя"><br>
+    <input type="text" name="phone"  class="fancy-input mar" placeholder="Телефон"><br>
+    <button type="submit" class="fancy-btn">ПЕРЕЗВОНИТЕ МНЕ</button>
+    </form>
+</div>
+<!--/ callbacl popup -->
